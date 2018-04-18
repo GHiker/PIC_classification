@@ -1,0 +1,45 @@
+The HOG features were computed using different parameter settings:
+
+
+**********************************************
+ HOG_01
+**********************************************
+-> All images were scaled to 40x40 pixels using bilinear interpolation
+-> Cell size 5x5 pixels (cellsize_x = 5, cellsize_y = 5)
+-> Block size 2x2 cells (numcell_x= 2, numcell_y = 2)
+-> Blocks shifted by 5 pixels in both directions (descstride_x = 5, descstride_y = 5)
+-> 8 orientations (orientbin = 8)
+-> semiCirc = true
+-> Preprocessor: RGB_Sqrt_Grad
+-> Normalizer: NormL2Hys
+
+--> Dimensionality of resulting feature vectors: 1568
+
+
+**********************************************
+ HOG_02
+**********************************************
+-> Same as HOG_01, but
+-> semiCirc = false
+
+--> Dimensionality of resulting feature vectors: 1568
+
+
+**********************************************
+ HOG_03
+**********************************************
+-> Same as HOG_01, but
+-> Cell size 4x4 pixels (cellsize_x = 4, cellsize_y = 4)
+-> 9 orientations (orientbin = 9)
+
+--> Dimensionality of resulting feature vectors: 2916
+
+**********************************************
+ HOG_04
+**********************************************
+-> Same as HOG_01, but
+-> Cell size 4x4 pixels (cellsize_x = 4, cellsize_y = 4)
+-> semiCirc = false
+-> 9 orientations (orientbin = 9)
+
+--> Dimensionality of resulting feature vectors: 2916
